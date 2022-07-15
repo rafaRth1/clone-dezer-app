@@ -1,0 +1,9 @@
+
+export const TYPES = {
+   ADD_TO_ARTIST: 'ADD_TO_ARTIST',
+   REMOVE_ONE_ARTIST: 'ADD_ONE_ARTIST',
+};
+
+
+
+

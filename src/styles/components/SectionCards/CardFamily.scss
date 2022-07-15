@@ -1,0 +1,39 @@
+.card-family {
+   color: $colorSecondary;
+   background: linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
+   padding: 24px 80px 16px;
+   border-radius: 2rem;
+   text-align: center;
+   min-width: 60rem;
+   margin-bottom: 5rem;
+
+   .card-family_content {
+      h2 {
+         font-size: 3.8rem;
+         margin-top: 0;
+      }
+
+      p {
+         font-size: 1.6rem;
+         margin-bottom: 2rem;
+      }
+
+      .time-suscription {
+         color: $colorSecondary;
+         font-size: 3rem;
+         font-weight: $roboto-Medium;
+      }
+
+      .price {
+         font-size: 1.6rem;
+         display: block;
+         color: $colorSecondary;
+      }
+
+      .more-information {
+         color: inherit;
+         font-size: 1.2rem;
+         text-decoration: underline;
+      }
+   }
+}

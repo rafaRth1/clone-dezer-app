@@ -1,0 +1,61 @@
+.channel-artist-select {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   p {
+      font-size: 1.5rem;
+      color: $color-gray-300;
+      margin-bottom: 2rem;
+   }
+
+   .button-channel-section {
+      @include customButton($textColorLight, $colorPink);
+      border: 0;
+      cursor: pointer;
+      &:hover {
+         background-color: rgb(126, 41, 41);
+      }
+   }
+}
+
+.channel-pictures {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   width: 100%;
+   margin-bottom: 2rem;
+   height: 152px;
+
+   .channel-pictures-item {
+      &:nth-child(2n) {
+         z-index: 10;
+         img {
+            width: 10rem !important;
+            height: 10rem !important;
+         }
+      }
+
+      &:nth-child(3n) {
+         z-index: 15;
+         margin: 0rem;
+         img {
+            max-width: 100%;
+            object-fit: cover;
+            width: 15rem !important;
+            height: 15rem !important   ;
+         }
+      }
+
+      figure {
+         margin: 0 0 0 -2.8rem;
+         img {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 8rem;
+            height: 8rem;
+            max-width: 100%;
+         }
+      }
+   }
+}

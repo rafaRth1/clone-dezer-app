@@ -1,0 +1,45 @@
+header {
+   width: 100%;
+}
+
+.content-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 11.5rem;
+}
+
+.partnet-top-banner {
+   border: 0.1rem rgb(82, 82, 93) solid;
+   border-radius: 0.7rem;
+   padding: 2rem;
+   display: flex;
+   flex-direction: column;
+
+   .partnet-top-banner_text {
+      color: $textPrimary;
+      font-size: 1.2rem;
+      font-weight: $roboto-Medium;
+      margin-bottom: 1.5rem;
+   }
+
+   .partnet-top-banner_logo {
+      text-align: center;
+   }
+}
+
+.partnet-top-banner_logo img {
+   width: 40%;
+}
+
+.login {
+   span {
+      color: $textPrimary;
+      font-size: 1.2rem;
+      font-weight: $roboto-Bold;
+      text-transform: uppercase;
+      padding: 1.3rem;
+      border-radius: 2rem;
+      border: 0.1rem $colorSecondary solid;
+   }
+}

@@ -1,0 +1,28 @@
+.card-free {
+   color: $colorSecondary;
+   background: linear-gradient(57.8deg, #6b42b4 9.75%, #943aab 95.44%);
+   padding: 24px 80px 16px;
+   border-radius: 2rem;
+   text-align: center;
+   min-width: 60rem;
+   margin-bottom: 5rem;
+
+   .card-free_content {
+      max-width: 60rem;
+      h2 {
+         font-size: 3.8rem;
+         margin-top: 0;
+      }
+
+      p {
+         font-size: 1.6rem;
+         margin-bottom: 2rem;
+      }
+
+      .more-information {
+         color: inherit;
+         font-size: 1.2rem;
+         text-decoration: underline;
+      }
+   }
+}

@@ -1,0 +1,18 @@
+.button {
+   display: block;
+   background-color: $colorPrimary;
+   color: $colorSecondary;
+   font-size: 1.4rem;
+   font-weight: $roboto-Bold;
+   text-transform: uppercase;
+   padding-block: 1.5rem;
+   padding-inline: 5rem;
+   border-radius: 2rem;
+   margin-bottom: 1.5rem;
+
+   &:hover {
+      background-color: $colorSecondary;
+      color: $colorPrimary;
+      transition: 0.2s ease-in-out all;
+   }
+}

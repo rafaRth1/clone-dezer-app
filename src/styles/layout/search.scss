@@ -1,0 +1,52 @@
+.page-topbar {
+   display: flex;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 22rem;
+   right: 0;
+   height: 5.6rem;
+   min-width: 77rem;
+   padding-inline: 2rem;
+   border-bottom: 0.1rem solid #32323d;
+}
+
+.topbar-search {
+   margin-right: auto;
+   width: 60%;
+
+   form {
+      display: flex;
+      align-items: center;
+
+      button {
+         background-color: $colorDark;
+         border: 0;
+      }
+
+      input {
+         background-color: $colorDark;
+         padding: 1rem;
+         outline: 0;
+         border: 0;
+         font-size: 1.6rem;
+         color: $textPrimary;
+         flex: 1;
+      }
+   }
+}
+
+.topbar-notification {
+   margin-left: 1rem;
+   button {
+      background-color: #000;
+      border: 0;
+   }
+}
+
+.topbar-account {
+   margin-left: 1rem;
+   img {
+      border-radius: 2rem;
+   }
+}

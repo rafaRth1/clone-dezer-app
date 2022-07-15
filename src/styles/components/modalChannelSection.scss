@@ -1,0 +1,210 @@
+.modal-channel-section {
+   position: fixed;
+   bottom: 0rem;
+   left: 0rem;
+   right: 0rem;
+   height: 100vh;
+   max-width: 100vw;
+   background-color: $colorDark;
+   z-index: 50;
+   transition: 0.4s ease-in-out all;
+   pointer-events: none;
+   transform: translateY(50%);
+   opacity: 0;
+
+   .modal-channel-content {
+      padding: 2.4rem 1.6rem;
+      position: relative;
+      height: 100%;
+   }
+}
+
+.logo-dezzer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   img {
+      margin-left: 5rem;
+   }
+
+   button {
+      background-color: $colorDark;
+      border: 0;
+      cursor: pointer;
+   }
+}
+
+.header-modal-channel {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+
+   .header-modal-channel-container {
+      width: 100%;
+      margin-inline: auto;
+      max-width: 80rem;
+   }
+}
+
+.header-modal-channel-stacks {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+   h1 {
+      margin: 0;
+      font-size: 3rem;
+   }
+
+   p {
+      margin-top: 2rem;
+      margin-bottom: 0;
+   }
+
+   .search-modal-channel {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      height: 5rem;
+      position: relative;
+
+      svg {
+         position: absolute;
+         left: 2rem;
+         bottom: 30%;
+      }
+
+      input {
+         width: 100%;
+         padding: 0 4.8rem;
+         border-radius: 2rem;
+         background-color: #23232d;
+         outline: 0;
+         border: 0.1rem solid #52525d;
+         font-size: 2rem;
+         color: $textColorLight;
+         transition: 0.1s ease-in-out all;
+
+         &:focus {
+            border-color: rgb(162, 162, 173);
+         }
+      }
+   }
+}
+
+.button-genre {
+   margin-top: 3rem;
+   background-color: transparent;
+   border: 0.1rem solid #a2a2ad;
+   padding: 1rem;
+   border-radius: 2rem;
+   color: #a2a2ad;
+   font-size: 1.3rem;
+   text-transform: uppercase;
+   margin-left: 1.5rem;
+   cursor: pointer;
+
+   &:hover {
+      background: rgba(234, 234, 234, 0.12);
+   }
+}
+
+.artists-grid {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.scroll-artists {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   top: 0;
+   overflow: scroll;
+
+   .artists-container {
+      display: grid;
+      grid-template-columns: repeat(6, 16.6666666667%);
+      width: 100%;
+      height: 100%;
+      max-width: 144rem;
+      padding: 2rem;
+
+      .artists-card {
+         margin: 1rem;
+         position: relative;
+
+         .picture-artist {
+            border-radius: 50%;
+            width: 182px;
+            height: 182px;
+            overflow: hidden;
+            transition: 0.2s ease-in-out all;
+            opacity: 0.9;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+               background: linear-gradient(45deg, #6b1b42, #f06262);
+               opacity: 0.9;
+            }
+
+            img {
+               object-fit: cover;
+               height: 100%;
+               width: 100%;
+               border-radius: 50%;
+
+               &:hover {
+                  opacity: 0.3;
+               }
+            }
+         }
+
+         .name-artist {
+            margin-top: 1.3rem;
+            font-size: 1.4rem;
+            text-align: center;
+         }
+      }
+      .icon-add-favorite {
+         opacity: 0;
+         svg {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            transition: 0.3s 0.5s ease;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+/* Clases Transforms active*/
+
+.active-favorite-artist {
+   opacity: 1 !important;
+}
+
+.bg-active-favorite-artist {
+   filter: opacity(0.4) drop-shadow(0 0 0 #f06262);
+}
+
+.activeModalChannel {
+   opacity: 1;
+   pointer-events: auto;
+   transform: translateY(0%) !important;
+}
+
+.opacityModal {
+   opacity: 0;
+}

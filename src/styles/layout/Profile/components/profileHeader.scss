@@ -1,0 +1,118 @@
+.profile {
+   display: flex;
+   .profile-image {
+      overflow: hidden;
+      border-radius: 50%;
+      max-width: 100%;
+      max-height: 100%;
+      position: relative;
+      display: inline-block;
+      figure {
+         width: 100%;
+         height: 100%;
+         img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+   .profile-info {
+      flex: 1;
+      align-self: center;
+      margin-left: 3.2rem;
+
+      h1 {
+         margin: 0;
+      }
+
+      ul {
+         list-style: none;
+         display: flex;
+         margin: 0;
+         padding: 0;
+
+         li {
+            font-size: 1.4rem;
+            color: #d1d1d6;
+            font-weight: $roboto-Light;
+            &:nth-child(1) {
+               &::after {
+                  content: '-';
+                  margin: 0 0.5rem 0 0.5rem;
+               }
+            }
+         }
+      }
+   }
+}
+
+.profile-image-size {
+   width: 17.2rem;
+   height: 17.2rem;
+}
+
+.navbar-profile {
+   width: 100%;
+   .navbar-bar {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      .navbar-item {
+         padding: 1rem 2rem;
+         cursor: pointer;
+         a {
+            flex: 1;
+            color: $textColorLight;
+            font-size: 1.6rem;
+         }
+      }
+   }
+}
+
+.active-item {
+   border-bottom: 2px solid $colorPink;
+}
+
+@media (min-width: 768px) {
+   .profile-image {
+      height: 17.2rem;
+      width: 17.2rem;
+   }
+}
+
+@media (min-width: 1100px) {
+   .profile-image {
+      height: 18.2rem;
+      width: 18.2rem;
+   }
+}
+
+@media (min-width: 1200px) {
+   .profile-image {
+      height: 20rem;
+      width: 20rem;
+   }
+}
+
+@media (min-width: 1310px) {
+   .profile-image {
+      height: 20rem;
+      width: 20rem;
+   }
+}
+
+@media (min-width: 1430px) {
+   .profile-image {
+      width: 23.4rem;
+      height: 23.4rem;
+   }
+}
+
+@media (min-width: 1728px) {
+   .profile-image {
+      width: 23.4rem;
+      height: 23.4rem;
+   }
+}

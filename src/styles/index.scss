@@ -12,17 +12,37 @@
 @import './components/spinner.scss';
 @import './components/Button.scss';
 @import './components/modalChannelSection.scss';
+@import './components/Slider/slider.scss';
+@import './components/modalNotification.scss';
 
 @import './layout/layout.scss';
 @import './layout/header.scss';
 @import './layout/mainPage.scss';
-@import './layout/dezzerApp.scss';
-/* @import './layout/mainPageDezzer.scss'; */
 @import './layout/search.scss';
 @import './layout/sideBar.scss';
-@import './layout/PageMain/pageMain.scss';
-@import './layout/PageMain/SectionAddArtist.scss';
-@import './layout/PageMain/sectionArtistsFavorite.scss';
+@import './layout/WebPlayer/pagePlayer.scss';
+@import './layout/Musica/musica.scss';
+@import './layout/Musica/SectionAddArtist.scss';
+@import './layout/Musica/sectionArtistsFavorite.scss';
+@import './layout/Musica/sectionPlaylistTop.scss';
+@import './layout/Podcasts/podcasts.scss';
+@import './layout/Podcasts/sectionPodcastsPopular.scss';
+@import './layout/Explorar/explorar.scss';
+@import './layout/Explorar/components/sectionGenres.scss';
+@import './layout/Profile/profile.scss';
+@import './layout/Profile/components/profileHeader.scss';
+@import './layout/Profile/components/createPlaylist.scss';
+@import './layout/Profile/components/sectionSliderArtistProfile.scss';
+@import './layout/Search/search.scss';
+@import './layout/Search/components/searchNavBar.scss';
+@import './layout/Search/components/sectionResultSearchAll.scss';
+@import './layout/Search/components/searchNavBarPlaylist.scss';
+@import './layout/Search/components/searchNavBarTrack.scss';
+@import './layout/Search/components/searchNavBarAlbum.scss';
+@import './layout/Search/components/searchNavBarArtist.scss';
+
+@import './layout/Playlist/playlist.scss';
+@import './layout/Playlist/headerPlaylist.scss';
 
 html {
    width: 100%;
@@ -44,6 +64,8 @@ body {
 .layout {
    width: 100%;
    height: 100%;
+   position: relative;
+   overflow: hidden;
 }
 
 .layout::before {

@@ -1,0 +1,22 @@
+.modal-notifaction {
+   background-color: #32323d;
+   font-size: 1.4rem;
+   padding: 1rem;
+   position: absolute;
+   top: 1rem;
+   right: 2rem;
+   z-index: 1000;
+   transform: translateX(100%);
+   transition: 0.3s ease-in-out all;
+   opacity: 0;
+   border-radius: 1rem;
+
+   p {
+      color: white;
+   }
+}
+
+.active_modal-notification {
+   transform: translateX(0%);
+   opacity: 1;
+}

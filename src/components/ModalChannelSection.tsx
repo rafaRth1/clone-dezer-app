@@ -100,7 +100,7 @@ const ModalChannelSection = ({ idsArtists, showModalChannel, setShowModalChannel
                            data-id={artist.id}
                         >
                            <div className={`picture-artist`} onClick={() => handleAddArtist(artist)}>
-                              <img src={artist.images[0].url} alt='Images Artist' width={242} height={242} />
+                              <img src={artist.images[0]?.url} alt='Images Artist' width={242} height={242} />
                            </div>
                            <div className={`icon-add-favorite`}>
                               <IoHeartSharp color='white' size={45} />

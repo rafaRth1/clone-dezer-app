@@ -2,11 +2,13 @@ html {
    font-size: 62.5%;
    box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
    box-sizing: inherit;
 }
+
 body {
    font-family: $font-roboto;
 }
@@ -20,15 +22,24 @@ img {
    height: auto;
 }
 
+figure {
+   margin: 0 !important;
+   display: inline-block;
+}
+
 h1 {
    font-size: 3.8rem;
 }
+
 h2 {
    font-size: 2.2rem;
+   margin: 0;
 }
+
 h3 {
    font-size: 3rem;
 }
+
 h4 {
    font-size: 2.6rem;
 }

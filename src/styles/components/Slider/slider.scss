@@ -1,0 +1,37 @@
+.slider {
+   overflow: hidden;
+   scroll-behavior: smooth;
+}
+
+.slider-content {
+   display: flex;
+   position: relative;
+}
+
+.card-slider {
+   flex: 0 0 calc(100% / 4);
+}
+
+@media (min-width: 768px) {
+   .card-slider {
+      flex: 0 0 calc(101% / 4);
+   }
+}
+
+@media (min-width: 1024px) {
+   .card-slider {
+      flex: 0 0 calc(101% / 4);
+   }
+}
+
+@media (min-width: 1280px) {
+   .card-slider {
+      flex: 0 0 calc(101% / 4);
+   }
+}
+
+@media (min-width: 1728px) {
+   .card-slider {
+      flex: 0 0 calc(101% / 5);
+   }
+}

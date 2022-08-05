@@ -1,0 +1,18 @@
+figure {
+   position: relative;
+   .actions {
+      display: block;
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      cursor: pointer;
+      background-color: $colorLight;
+      padding: 1rem;
+      border-radius: 50%;
+   }
+}
+
+.album-name {
+   font-size: 1.4rem;
+   margin: 0;
+}

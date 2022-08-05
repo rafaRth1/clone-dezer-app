@@ -1,0 +1,77 @@
+.slider-create-playlist {
+   ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      .playlist-item {
+         cursor: pointer;
+         .content-playlist-item {
+            width: 26.4rem;
+            height: 26.4rem;
+            background-color: #72727d;
+
+            .picture-image-playlist {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100%;
+            }
+
+            .name-playlist {
+               a {
+                  color: $textColorLight;
+                  font-size: 1.4rem;
+                  margin: 1rem;
+                  display: block;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 1100px) {
+   .card-slider-artists {
+      figure {
+         height: 18.2rem !important;
+         width: 18.2rem !important;
+      }
+   }
+}
+
+@media (min-width: 1200px) {
+   .card-slider-artists {
+      figure {
+         height: 20.1rem !important;
+         width: 20.1rem !important;
+      }
+   }
+}
+
+@media (min-width: 1310px) {
+   .card-slider-artists {
+      figure {
+         height: 23.4rem !important;
+         width: 23.4rem !important;
+      }
+   }
+}
+
+@media (min-width: 1430px) {
+   .card-slider-artists {
+      figure {
+         height: 26.4rem !important;
+         width: 26.4rem !important;
+      }
+   }
+}
+
+@media (min-width: 1728px) {
+   .card-slider-artists {
+      figure {
+         height: 26.4rem !important;
+         width: 26.4rem !important;
+      }
+   }
+}

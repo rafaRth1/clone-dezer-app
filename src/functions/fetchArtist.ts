@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
-import { baseURL } from '../config';
+import { baseURLSpotify } from '../config';
 import { AppContext } from '../context/AppContext';
 
 export const fetchArtist = () => {
@@ -9,7 +9,7 @@ export const fetchArtist = () => {
 
    const handleAddArtist = async (): Promise<void> => {
       try {
-         const result = await axios.get<any>(`${baseURL}/search?q=a&type=artist&market=ES&limit=50`, {
+         const result = await axios.get<any>(`${baseURLSpotify}/search?q=a&type=artist&market=ES&limit=50`, {
             method: 'GET',
             headers: { Authorization: `Bearer ${getToken}` },
          });

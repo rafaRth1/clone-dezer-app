@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/Layout/.tsx"],
+  "include": ["src", "src/Feature/.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

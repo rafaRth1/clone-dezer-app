@@ -1,13 +1,8 @@
 import { useContext } from 'react';
-import { AppContext } from '../context/AppContext';
-
-interface AppContenxtProps {
-   isLogin: boolean;
-   setIsLogin: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { AppContenxtProps, AppContext } from '../context/AppContext';
 
 const useProvider = () => {
-   return useContext<AppContenxtProps>(AppContext);
+	return useContext<AppContenxtProps>(AppContext);
 };
 
 export default useProvider();

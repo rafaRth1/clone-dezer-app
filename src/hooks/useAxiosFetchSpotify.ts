@@ -1,31 +1,30 @@
 import axios from 'axios';
-import { useCallback, useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { baseURLSpotify } from '../config';
-import { AppContext } from '../context/AppContext';
-import useGetToken from './useGetToken';
+import { useContextDeezer } from './useContextDeezer';
 
 export const useAxiosFetchSpotify = (url: string) => {
-   const [data, setData] = useState<any>(null);
-   const [loading, setLoading] = useState<boolean>(false);
-   const { token } = useContext(AppContext);
+	const [data, setData] = useState<any>(null);
+	const [loading, setLoading] = useState(false);
+	const { token } = useContextDeezer();
 
-   const fetchData = async (): Promise<void> => {
-      try {
-         setLoading(true);
-         const response = await axios.get(`${baseURLSpotify}${url}`, {
-            method: 'GET',
-            headers: { Authorization: `Bearer ${token}` },
-         });
-         setData(response.data);
-         setLoading(false);
-      } catch (error) {
-         console.log(error);
-      }
-   };
+	const fetchData = async (): Promise<void> => {
+		try {
+			setLoading(true);
+			const response = await axios.get(`${baseURLSpotify}${url}`, {
+				headers: { Authorization: `Bearer ${token}` },
+				method: 'GET',
+			});
+			setData(response.data);
+			setLoading(false);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
-   useEffect(() => {
-      fetchData();
-   }, []);
+	useEffect(() => {
+		fetchData();
+	}, []);
 
-   return [data, loading];
+	return [data, loading];
 };

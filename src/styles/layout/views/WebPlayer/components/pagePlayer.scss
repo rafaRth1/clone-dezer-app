@@ -1,0 +1,132 @@
+.page-player {
+	.player-bottom {
+		display: flex;
+		align-items: center;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 0 2.4rem;
+		min-width: 99rem;
+		z-index: 50;
+		height: 8rem;
+		background-color: #23232d;
+		border-top: 1px solid #32323d;
+
+		.player-controls {
+			.svg-icon-groups {
+				display: flex;
+				align-items: center;
+				padding: 0;
+				margin: 0;
+				list-style: none;
+
+				button {
+					background-color: rgba(0, 0, 0, 0);
+					border: 0;
+
+					svg {
+						color: #32323d;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		.player-track {
+			padding: 0 7.2rem;
+			flex: 1;
+
+			.track-container {
+				margin: auto;
+				max-width: 80rem;
+				width: 80%;
+
+				.track-heading {
+					min-height: 3.2rem;
+					font-size: 1.4rem;
+					margin-bottom: 0.4rem;
+					display: flex;
+					align-items: center;
+				}
+
+				.track-seekbar {
+					.slider-autohide {
+						display: flex;
+						align-items: center;
+						position: relative;
+						width: 100%;
+						padding-right: 1.2rem;
+
+						.slider-counter-current {
+							position: absolute;
+							bottom: 0;
+							right: 100%;
+							color: white;
+							margin-right: 2rem;
+						}
+						.slider-track {
+							flex: 1;
+							height: 0.2rem;
+							background-color: #bebec7;
+							position: absolute;
+							bottom: 0.3rem;
+							width: 100%;
+						}
+						.slider-counter-max {
+							position: absolute;
+							bottom: 0;
+							left: 100%;
+							color: white;
+							margin-left: 2rem;
+						}
+					}
+				}
+			}
+		}
+		.player-options {
+			.option-list {
+				display: flex;
+				align-items: center;
+				padding: 0;
+				margin: 0;
+				list-style: none;
+
+				.option-item {
+					padding-left: 5rem;
+
+					&:nth-child(2) {
+						border-left: 2px solid #32323d;
+					}
+
+					.svg-icon-groups {
+						display: flex;
+						align-items: center;
+						padding: 0;
+						list-style: none;
+
+						.svg-icon-item {
+							button {
+								background-color: rgba(0, 0, 0, 0);
+								border: none;
+
+								svg {
+									color: white;
+									cursor: pointer;
+								}
+							}
+						}
+					}
+
+					button {
+						display: flex;
+						background-color: rgba(0, 0, 0, 0);
+						border: none;
+						font-size: 1.4rem;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

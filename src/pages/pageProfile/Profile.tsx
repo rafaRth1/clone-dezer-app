@@ -1,15 +1,11 @@
-import CreatePlaylist from './components/CreatePlaylist';
-import ProfileHeader from './components/ProfileHeader';
-import SectionSliderArtistProfile from './components/SectionSliderArtistProfile';
+import { Outlet } from 'react-router-dom';
+import ProfileHeader from './ProfileHeader';
 
-const Profile = () => {
-   return (
-      <main className='page-main-profile'>
-         <ProfileHeader />
-         <CreatePlaylist />
-         <SectionSliderArtistProfile />
-      </main>
-   );
+export const Profile = () => {
+	return (
+		<main className='page-main-profile'>
+			<ProfileHeader />
+			<Outlet />
+		</main>
+	);
 };
-
-export default Profile;

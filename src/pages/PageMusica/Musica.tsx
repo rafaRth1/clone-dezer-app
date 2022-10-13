@@ -1,15 +1,11 @@
-import SectionAddArtist from './components/SectionAddArtist';
-import SectionArtistsFavorite from './components/SectionArtistsFavorite';
-import SectionPlaylistTop from './components/SectionPlaylistTop';
+import { SectionAddArtist, SectionArtistsFavorite, SectionPlaylistTop } from './components';
 
-const Musica = () => {
-   return (
-      <main className='page-main-music'>
-         <SectionAddArtist />
-         <SectionArtistsFavorite />
-         <SectionPlaylistTop />
-      </main>
-   );
+export const Musica = () => {
+	return (
+		<main className='page-main-music'>
+			<SectionAddArtist />
+			<SectionArtistsFavorite />
+			<SectionPlaylistTop />
+		</main>
+	);
 };
-
-export default Musica;

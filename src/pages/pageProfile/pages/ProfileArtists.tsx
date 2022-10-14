@@ -1,3 +1,7 @@
 export const ProfileArtists = () => {
-	return <div>ProfileArtists</div>;
+	return (
+		<div className='container'>
+			<h1>Artists</h1>
+		</div>
+	);
 };

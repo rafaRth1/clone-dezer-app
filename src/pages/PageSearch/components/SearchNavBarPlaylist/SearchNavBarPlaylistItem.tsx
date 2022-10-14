@@ -9,14 +9,7 @@ export const SearchNavBarPlaylistItem = () => {
 	return (
 		<>
 			{loading ? (
-				<div
-					style={{
-						display: 'flex',
-						justifyContent: 'center',
-						alignItems: 'center',
-					}}>
-					<Spinner />
-				</div>
+				<Spinner />
 			) : (
 				<div className='container'>
 					<h2>

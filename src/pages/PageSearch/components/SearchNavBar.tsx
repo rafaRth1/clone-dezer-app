@@ -15,7 +15,7 @@ export const SearchNavBar = ({ search }: Props) => {
 						<li className='navbar-search-item '>
 							<NavLink
 								to={`/search/${search}`}
-								className={({ isActive }) => (!isActive ? undefined : 'active-searct-item')}
+								className={({ isActive }) => (isActive ? 'active-searct-item' : undefined)}
 								end>
 								Todo
 							</NavLink>

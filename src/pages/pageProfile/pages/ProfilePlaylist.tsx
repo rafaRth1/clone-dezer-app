@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const ProfilePlaylist = () => {
-	return <div>ProfilePlaylist</div>;
+	return (
+		<div className='container'>
+			<h1>Playlist</h1>
+		</div>
+	);
 };

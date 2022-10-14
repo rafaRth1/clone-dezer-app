@@ -1,140 +1,140 @@
 .musics-result-rows-all {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   font-size: 1.3rem;
-   text-transform: uppercase;
-   color: rgb(190, 190, 199);
-   height: 4.8rem;
-   padding: 0.8rem 0;
-   line-height: 2rem;
-   border-bottom: 1px solid #32323d;
-   margin: 0.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	color: rgb(190, 190, 199);
+	height: 4.8rem;
+	padding: 0.8rem 0;
+	line-height: 2rem;
+	border-bottom: 1px solid #32323d;
+	margin: 0.5rem 0;
 
-   .song {
-      flex: 1;
-   }
+	.song {
+		flex: 1;
+	}
 
-   .artist {
-      margin-left: 3.2rem;
-      width: 15%;
-   }
+	.artist {
+		margin-left: 3.2rem;
+		width: 15%;
+	}
 
-   .album {
-      margin-left: 3.2rem;
-      width: 15%;
-   }
+	.album {
+		margin-left: 3.2rem;
+		width: 15%;
+	}
 
-   .time-song {
-      margin-left: 3.2rem;
-      width: 4rem;
-   }
-   .check-song {
-      margin-left: 3.2rem;
-      width: 4rem;
-      .check-music {
-         width: 2rem;
-         height: 2rem;
-      }
-   }
+	.time-song {
+		margin-left: 3.2rem;
+		width: 4rem;
+	}
+	.check-song {
+		margin-left: 3.2rem;
+		width: 4rem;
+		.check-music {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
 }
 
 .music-result-data {
-   .music-result-data-content {
-      display: flex;
-      align-items: center;
-      padding: 0.6rem 0;
-      color: rgb(190, 190, 199);
-      .song-data {
-         display: flex;
-         align-items: center;
-         flex: 1;
-         p {
-            font-size: 1.4rem;
-            flex: 1;
-            margin-left: 2rem;
-         }
+	.music-result-data-content {
+		display: flex;
+		align-items: center;
+		padding: 0.6rem 0;
+		color: rgb(190, 190, 199);
+		.song-data {
+			display: flex;
+			align-items: center;
+			flex: 1;
+			p {
+				font-size: 1.4rem;
+				flex: 1;
+				margin-left: 2rem;
+			}
 
-         .actions-song-data {
-            display: flex;
-            div {
-               margin-left: 1rem;
-               padding: 0.4rem;
-               border-radius: 50%;
-               cursor: pointer;
-               &:hover {
-                  background: rgba(209, 209, 214, 0.4);
-               }
-            }
-         }
-      }
+			.actions-song-data {
+				display: flex;
+				div {
+					margin-left: 1rem;
+					padding: 0.4rem;
+					border-radius: 50%;
+					cursor: pointer;
+					&:hover {
+						background: rgba(209, 209, 214, 0.4);
+					}
+				}
+			}
+		}
 
-      .artist-data {
-         width: 15%;
-         margin-left: 3.2rem;
-         font-size: 1.4rem;
-      }
+		.artist-data {
+			width: 15%;
+			margin-left: 3.2rem;
+			font-size: 1.4rem;
+		}
 
-      .album-data {
-         margin-left: 3.2rem;
-         width: 15%;
-         font-size: 1.4rem;
-      }
+		.album-data {
+			margin-left: 3.2rem;
+			width: 15%;
+			font-size: 1.4rem;
+		}
 
-      .time-song-data {
-         margin-left: 3.2rem;
-         width: 4rem;
-         display: flex;
-         align-items: center;
-         font-size: 1.4rem;
-      }
+		.time-song-data {
+			margin-left: 3.2rem;
+			width: 4rem;
+			display: flex;
+			align-items: center;
+			font-size: 1.4rem;
+		}
 
-      .check-song {
-         margin-left: 3.2rem;
-         width: 4rem;
-      }
-   }
+		.check-song {
+			margin-left: 3.2rem;
+			width: 4rem;
+		}
+	}
 }
 
 .search-top-result-container {
-   border-bottom: 1px solid #32323d;
+	border-bottom: 1px solid #32323d;
 
-   h2 {
-      padding-bottom: 3rem;
-   }
+	h2 {
+		padding-bottom: 3rem;
+	}
 
-   .search-top-result {
-      display: flex;
-      align-items: center;
-      .search-top-result-image {
-         figure {
-            display: inline-block;
-            border-radius: 50%;
-            overflow: hidden;
-            width: 15.6rem;
-            height: 15.6rem;
+	.search-top-result {
+		display: flex;
+		align-items: center;
+		.search-top-result-image {
+			figure {
+				display: inline-block;
+				border-radius: 50%;
+				overflow: hidden;
+				width: 15.6rem;
+				height: 15.6rem;
 
-            img {
-               object-fit: cover;
-               max-width: 100%;
-               max-height: 100%;
-            }
-         }
-      }
+				img {
+					object-fit: cover;
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
 
-      .search-top-result-info {
-         padding-left: 3rem;
-         .name-info {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-         }
+		.search-top-result-info {
+			padding-left: 3rem;
+			.name-info {
+				font-size: 1.6rem;
+				margin-bottom: 1rem;
+			}
 
-         .type-info {
-            font-size: 1.1rem;
-            background-color: #32323d;
-            padding: 0.3rem 0.7rem;
-            border-radius: 10%;
-         }
-      }
-   }
+			.type-info {
+				font-size: 1.1rem;
+				background-color: #32323d;
+				padding: 0.3rem 0.7rem;
+				border-radius: 10%;
+			}
+		}
+	}
 }

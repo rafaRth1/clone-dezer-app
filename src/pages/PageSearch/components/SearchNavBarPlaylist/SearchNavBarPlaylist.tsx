@@ -12,15 +12,7 @@ export const SearchNavBarPlaylist = () => {
 		<div className='container'>
 			<h2>{getResultPlaylist.total} Playlist</h2>
 			{loading ? (
-				<div
-					style={{
-						display: 'flex',
-						justifyContent: 'center',
-						alignContent: 'center',
-						marginTop: '5rem',
-					}}>
-					<Spinner />
-				</div>
+				<Spinner />
 			) : (
 				<ul className='content-search-result-playlist'>
 					{getResultPlaylist.data.map((playlist: PlaylistArtist) => (

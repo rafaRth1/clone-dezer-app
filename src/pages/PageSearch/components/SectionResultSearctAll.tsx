@@ -1,5 +1,5 @@
-import { Spinner } from '../../../components';
 import { useContextDeezer } from '../../../hooks/useContextDeezer';
+import { Spinner } from '../../../components';
 import { SearchResult } from '../../../interfaces/interfaceSearch';
 import { IoEllipsisHorizontalOutline, IoHeartOutline, IoMusicalNotesOutline, IoTimeOutline } from 'react-icons/io5';
 
@@ -11,14 +11,7 @@ export const SectionResultSearctAll = () => {
 			<div className='container search-top-result-container'>
 				<h2>Mejor Resultado</h2>
 				{loading ? (
-					<div
-						style={{
-							display: 'flex',
-							justifyContent: 'center',
-							alignItems: 'center',
-						}}>
-						<Spinner />
-					</div>
+					<Spinner />
 				) : (
 					<div className='search-top-result'>
 						<div className='search-top-result-image'>

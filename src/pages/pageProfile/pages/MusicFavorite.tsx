@@ -1,3 +1,7 @@
 export const MusicFavorite = () => {
-	return <div>MusicFavorite</div>;
+	return (
+		<div className='container'>
+			<h1>MusicFavorite</h1>
+		</div>
+	);
 };

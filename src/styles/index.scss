@@ -43,6 +43,9 @@
 @import './layout/Playlist/playlist.scss';
 @import './layout/Playlist/headerPlaylist.scss';
 
+@import '../pages/pageProfile/pages/MusicFavorite/musicFavorite.scss';
+@import '../pages/pageProfile/pages/ProfileAlbum/ProfileAlbums.scss';
+
 html {
 	width: 100%;
 	height: 100%;

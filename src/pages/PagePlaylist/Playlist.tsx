@@ -3,7 +3,6 @@ import fetchJsonp from 'fetch-jsonp';
 import { useParams } from 'react-router-dom';
 import { AppContext } from '../../context/AppContext';
 import { PlaylistTracks } from '../../interfaces/interfacePlaylist';
-import Spinner from '../../components/Spinner/Spinner';
 import HeaderPlaylist from './components/HeaderPlaylist';
 import TracksPlaylist from './components/TracksPlaylist';
 

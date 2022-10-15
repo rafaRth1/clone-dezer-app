@@ -58,7 +58,7 @@ const ProfileHeader = () => {
 									Albumes
 								</NavLink>
 							</li>
-							<li className='navbar-item'>
+							{/* <li className='navbar-item'>
 								<NavLink
 									to={`/profile/${idProfile}/artists`}
 									className={({ isActive }) => (isActive ? 'active-item' : undefined)}>
@@ -71,7 +71,7 @@ const ProfileHeader = () => {
 									className={({ isActive }) => (isActive ? 'active-item' : undefined)}>
 									Podcasts
 								</NavLink>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>
